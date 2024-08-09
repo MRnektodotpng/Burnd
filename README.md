@@ -31,7 +31,7 @@ Before you begin, ensure you have the following installed on your machine:
     ```
     or
    ```bash
-    yarn install
+   yarn install
     ```
 
 6. **Running the Project**
@@ -41,7 +41,7 @@ Before you begin, ensure you have the following installed on your machine:
    ```
     or
    ```bash
-     yarn dev
+   yarn dev
    ```
 
 8. **Building for Production**
