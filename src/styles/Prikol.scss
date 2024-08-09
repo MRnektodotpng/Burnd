@@ -1,0 +1,12 @@
+@import 'mixins';
+.line__block{
+    position: relative;
+
+   
+}
+.line__between__blocks{
+    @include media('max','lg'){
+        height: 400px;
+        
+    }
+}

@@ -1,0 +1,33 @@
+@import 'mixins';
+.socials{
+    justify-content: space-evenly;
+}
+.social{
+    display: inline-flex;
+ 
+    position: relative;
+    
+    &:hover > *{
+        color: purple;
+        
+    }
+    
+}
+.linkArrow{
+    position: absolute;
+    top: -40%;
+    left: 110%;
+    transition: all 0.25s ease-out;
+    @include media('max','md'){
+        width: 10px;
+        height: 10px;
+        top: -10%;
+        left: 100%;
+    }
+}
+.social:hover{
+    .linkArrow{
+        transform: translate(30%,-30%);
+   
+    }
+}
