@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# Burnd
-=======
+
 # Burnd
 
 **Burnd** is a web application built using [React](https://reactjs.org/) and [Vite](https://vitejs.dev/). This project is designed for quick and efficient web development, offering a modern development environment with fast build times.
