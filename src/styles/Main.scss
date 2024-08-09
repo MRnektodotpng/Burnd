@@ -1,0 +1,29 @@
+@import 'mixins';
+.main{
+   
+}
+.block{
+   
+}
+.block__text{
+    
+}
+.form__inner{
+    position: relative;
+
+}
+.email__form{
+    background-color: transparent;
+}
+.submit{
+    
+    left: 97%;
+    top: 35%;
+    position: absolute;
+    &:hover{
+        color: purple;
+    }
+    @include media('max','sm'){
+        left: 90%;
+    }
+}

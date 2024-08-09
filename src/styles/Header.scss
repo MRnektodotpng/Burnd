@@ -1,0 +1,109 @@
+
+$overlay-color: rgba(0, 0, 0, 0.75);
+@import 'mixins';
+@import url(https://fonts.googleapis.com/css?family=Almendra:regular,italic,700,700italic);
+.fontt  {
+    font-family: "Almendra";
+}
+.header{
+    position: relative;
+   height: 100vh;
+}
+.header__inner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+  
+}
+.header__gif_cont{
+    position: relative;
+    display: inline-block; // Allows the container to size to the content
+  width: fit-content;    // Ensures the container fits the GIF size
+
+}
+.header__gif{
+ 
+    // background-image: url(.);
+    // background-size: contain;
+    // background-position: center;
+    // background-repeat: no-repeat;
+
+    mask-image: url(../assets/Rectangle.png);
+    mask-size: 80%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    user-select: none; // Prevents the GIF from being selected
+    pointer-events: none; 
+    @include media('max','xl'){
+        width: 300px;
+    }
+    @include media('max','md'){
+        width: 220px;
+    }
+    @include media('max','sm'){
+        width: 150px;
+    }
+}
+
+.overlay {
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay-color; // Use the variable for the overlay color
+    pointer-events: none; // Allows clicks to pass through to the GIF if needed
+  }
+
+.header__nav_scrolling{
+    position: fixed;
+    z-index: 5;
+    transform: translate(-50%,);
+    left: 50%;
+    top: 0%;
+    
+    .gif_text{
+        
+
+
+    }
+
+    li{
+  
+        @include media('max','md'){
+            margin: 0px 7px;
+        }
+ 
+       
+    }
+}
+.header__nav{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,);
+    @include media('max','xs'){
+        top: 80%;
+    }
+}
+.gif_text{
+    
+}
+.nav{
+    display: flex;
+    list-style-type: none;
+  
+    li{
+        margin: 10px 20px;
+        :hover{
+            color: purple;
+        }
+        @include media('max','md'){
+            margin: 0px 7px;
+        }
+    }
+}
